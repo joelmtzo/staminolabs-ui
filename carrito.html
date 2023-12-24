@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        .bg-title {
+            background: url('img/christopher-burns-Kj2SaNHG-hg-unsplash.jpg') center center/cover no-repeat;
+            border-radius: 7px;
+            text-shadow: 5px 5px 10px black;
+        } 
+        td {
+            height: 36px;
+            vertical-align: middle;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <span class="fs-4">Stamino Labs</span>
+        </a>
+        <ul class="nav nav-pills">  
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+            <li class="nav-item"><a href="carrito.html" class="nav-link active">Carrito (0)</a></li>
+          </ul>
+      </header>
+
+      <div class="row">
+
+        <h3 class="text-center py-4 mb-4">Carrito de compras</h3>
+
+        <div class="col-md-12 col-sm-12 col-lg-8">
+            <table class="table table-sm text-center">
+                <tr>
+                    <th></th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/01p - copia.png" class="img-thumbnail" style="width: 8rem;" alt="">
+                    </td>
+                    <td>
+                        <p>Whey Protein</p>
+                    </td>
+                    <td>
+                        <div class="d-flex">
+                            <button class="btn btn-warning btn-sm">-</button>
+                            <input type="text" value="1" class="form-control mx-auto text-center" style="max-width: 50px;">
+                            <button class="btn btn-warning btn-sm">+</button>
+                        </div>
+                    </td>
+                    <td>
+                        $ 799.00
+                    </td>
+                    <td>
+                        $ 799.00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/04p - copia.png" class="img-thumbnail" style="width: 8rem;" alt="">
+                    </td>
+                    <td>
+                        <p>Isolate Matcha</p>
+                    </td>
+                    <td>
+                        <div class="d-flex">
+                            <button class="btn btn-warning btn-sm">-</button>
+                            <input type="text" value="2" class="form-control mx-auto text-center" style="max-width: 50px;">
+                            <button class="btn btn-warning btn-sm">+</button>
+                        </div>
+                    </td>
+                    <td>
+                        $ 799.00
+                    </td>
+                    <td>
+                        $ 1598.00
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-12 col-sm-12 col-lg-4">
+            <div class="card shadow mb-4">
+                <div class="card-body p-4">
+                    <p class="text-center fs-5 fw-bold">-- Resumen --</p>
+                    <table class="table table-sm mt-4">
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$ 2397.00</td>
+                        </tr>
+                        <tr>
+                            <td>Descuento</td>
+                            <td>$ 0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>$ 2397.00</td>
+                        </tr>
+                    </table>
+                    <div class="row g-3">
+                        <p class="m-1 p-1 mb-0 pb-0 mt-3">¿Tienes un cupón de descuento?</p>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Ingresa tu Código">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-warning">Validar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer p-4">
+                    <div class="d-flex justify-content-between m-1">
+                        <button class="btn btn-secondary">Volver al catálogo</button>
+                        <button class="btn btn-success">Finalizar pedido</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="small">Todos los pagos son procesados de forma 100% segura</p>
+                <img src="img/secure-encryption.png" class="img-fluid" style="max-width: 100px;" alt="">
+                <img src="img/paypal-secure-payments.png" class="img-fluid" style="max-width: 200px;" alt="">
+            </div>
+        </div>
+
+      </div>
+
+    <div class="text-center mt-5" id="footer">
+      <p class="p-3">Stamino Labs &reg; Todos los derechos reservados 2023</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
