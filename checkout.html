@@ -1,0 +1,194 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+        .bg-title {
+            background: url('img/christopher-burns-Kj2SaNHG-hg-unsplash.jpg') center center/cover no-repeat;
+            border-radius: 7px;
+            text-shadow: 5px 5px 10px black;
+        } 
+        td {
+            height: 36px;
+            vertical-align: middle;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+        <img src="img/logoStamino2.png" style="width: 80px; margin-right: 15px;" alt="">
+          <span class="fs-4">Stamino Labs</span>
+        </a>
+        <ul class="nav nav-underline">  
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="productos.html" class="nav-link">Productos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+            <li class="nav-item"><a href="carrito.html" class="nav-link active">Carrito (3)</a></li>
+          </ul>
+      </header>
+
+      <div class="row">
+
+        <h3 class="text-center py-4 mb-4">Finalizar Pedido</h3>
+
+        <div class="col-md-12 col-sm-12 col-lg-8">
+            <div class="card p-3">
+                <div class="card-body">
+                    <div class="pb-4">
+                        <h4>Dirección de envio</h4>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Nombre (s)</label>
+                          <input type="text" class="form-control" value="John">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Apellidos</label>
+                          <input type="text" class="form-control" value="Doe">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Dirección (Calle y número)</label>
+                          <input type="text" class="form-control" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress2" class="form-label">Dirección (Colonia y/o entre calles)</label>
+                          <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">Ciudad</label>
+                          <input type="text" class="form-control" value="Ciudad de Mexico">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">Estado</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Elige de la lista...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">Código postal</label>
+                          <input type="text" class="form-control" id="inputZip" value="55000">
+                        </div>
+                        
+                      </form>
+                    </div>
+                      <div class="py-4">
+                        <h4>Dirección de facturación</h4>
+                      <form action="">
+                        <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" checked id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Misma que dirección de envio
+                              </label>
+                            </div>
+                          </div>
+                      </form>
+                      </div>
+                      <div class="py-4">
+                        <h4>Método de pago</h4>
+                      <form action="">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Transferencia
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Tarjeta de crédito
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                              Pago contra entrega
+                            </label>
+                          </div>
+                        <div class="row g-3 p-3">
+                            <div class="col-sm-7">
+                              <label for="">Número de tarjeta (16 digitos)</label>
+                                <input type="text" class="form-control" value="5456 1010 2020 3030">
+                            </div>
+                            <div class="col-sm">
+                              <label for="">Expiración (mm/aa)</label>
+                                <input type="text" class="form-control" value="12/27">
+                            </div>
+                            <div class="col-sm">
+                              <label for="">CVV</label>
+                                <input type="text" class="form-control" value="278">
+                            </div>
+                          </div>
+                      </form>
+                      </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-12 col-sm-12 col-lg-4">
+            <div class="card shadow mb-4">
+                <div class="card-body p-4">
+                    <p class="text-center fs-5 fw-bold">-- Resumen --</p>
+                    <table class="table table-sm mt-4">
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$ 2397.00</td>
+                        </tr>
+                        <tr>
+                            <td>Descuento</td>
+                            <td>$ 0.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>$ 2397.00</td>
+                        </tr>
+                    </table>
+                    <div class="row g-3">
+                        <p class="m-1 p-1 mb-0 pb-0 mt-3">¿Tienes un cupón de descuento?</p>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Ingresa tu Código">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-warning">Validar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer p-4">
+                    <div class="d-flex justify-content-between m-1">
+                        <a href="carrito.html" class="btn btn-secondary">Volver al carrito</a>
+                        <a href="checkout-success.html" class="btn btn-success">Confirmar pedido</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="small">Todos los pagos son procesados de forma 100% segura</p>
+                <img src="img/secure-encryption.png" class="img-fluid" style="max-width: 100px;" alt="">
+                <img src="img/paypal-secure-payments.png" class="img-fluid" style="max-width: 200px;" alt="">
+            </div>
+        </div>
+
+      </div>
+
+    <div class="text-center mt-5" id="footer">
+      <p class="p-3">Stamino Labs &reg; Todos los derechos reservados 2023</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
